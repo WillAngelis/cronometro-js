@@ -45,9 +45,7 @@ main {
   background: #fff;
   border-radius: 6px;
   border: none;
-  box-shadow:
-    rgb(0 0 0 / 20%) 0 3px 5px -1px,
-    rgb(0 0 0 / 14%) 0 6px 10px 0,
+  box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0,
     rgb(0 0 0 / 12%) 0 1px 18px 0;
   color: #404040;
   cursor: pointer;
@@ -59,74 +57,79 @@ main {
   justify-content: center;
   align-items: center;
   padding: 6px 10px;
-  transition:
-    box-shadow 280ms cubic-bezier(.4, 0, .2, 1),
-    opacity 15ms linear 30ms,
-    transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
 
 .btn:hover {
-  background: #F6F9FE;
+  background: #f6f9fe;
   color: #174ea6;
 }
 
 .btn:active {
   outline: none;
-  box-shadow:
-    0 4px 4px 0 rgb(60 64 67 / 30%),
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
     0 8px 12px 6px rgb(60 64 67 / 15%);
 }
 
 .btn:focus {
   outline: none;
 }
-@media (min-width: 350px)
-{
-  .buttons{
+
+@media (min-width: 350px) {
+  .buttons {
     width: 350px;
   }
-  .btn{
+
+  .btn {
     width: 80px;
   }
-  .timer__title{
+
+  .timer__title {
     font-size: 4em;
   }
 }
-@media (min-width: 480px)
-{
-  .buttons{
+
+@media (min-width: 480px) {
+  .buttons {
     width: 460px;
   }
-  .btn{
+
+  .btn {
     width: 120px;
   }
-  .timer__title{
+
+  .timer__title {
     font-size: 6em;
   }
 }
-@media (min-width: 720px)
-{
-  .buttons{
+
+@media (min-width: 720px) {
+  .buttons {
     width: 700px;
   }
-  .btn{
+
+  .btn {
     width: 200px;
     height: 40px;
   }
-  .timer__title{
+
+  .timer__title {
     font-size: 10em;
   }
 }
-@media (min-width: 980px)
-{
-  .buttons{
+
+@media (min-width: 980px) {
+  .buttons {
     width: 900px;
   }
-  .btn{
+
+  .btn {
     width: 250px;
     height: 40px;
   }
-  .timer__title{
+
+  .timer__title {
     font-size: 14em;
   }
 }
