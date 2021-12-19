@@ -11,10 +11,7 @@ main {
 }
 
 .container {
-  background: rgb(91, 75, 235);
-  background: linear-gradient(245deg,
-      rgba(91, 75, 235, 1) 0%,
-      rgba(46, 227, 235, 1) 75%);
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,16 +80,28 @@ main {
 .btn:focus {
   outline: none;
 }
-@media (min-width: 600px)
+@media (min-width: 350px)
 {
   .buttons{
-    width: 600px;
+    width: 350px;
   }
   .btn{
-    width: 180px;
+    width: 80px;
   }
   .timer__title{
-    font-size: 8em;
+    font-size: 4em;
+  }
+}
+@media (min-width: 480px)
+{
+  .buttons{
+    width: 460px;
+  }
+  .btn{
+    width: 120px;
+  }
+  .timer__title{
+    font-size: 6em;
   }
 }
 @media (min-width: 720px)
@@ -108,7 +117,7 @@ main {
     font-size: 10em;
   }
 }
-@media (min-width: 1000px)
+@media (min-width: 980px)
 {
   .buttons{
     width: 900px;
