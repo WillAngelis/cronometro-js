@@ -21,7 +21,7 @@ function stop (){
     hh = 0;
     mm = 0;
     ss = 0;
-    tempo.innerHTML= "00:00:00";
+    tempo.textContent= "00:00:00";
 }
 function timer(){
     ss++;
@@ -38,14 +38,14 @@ function timer(){
     (mm < 10 ? "0" + mm : mm) + ":" +
     (ss < 10 ? "0" + ss : ss);
 
-    tempo.innerHTML = format;
+    tempo.textContent = format;
 }
 init.addEventListener("click", ()=> {
     start();
 });
-parar.addEventListener("click", ()=> {
-    stop();
-});
 pausar.addEventListener("click",() => {
     pause();
 })
+parar.addEventListener("click", ()=> {
+    stop();
+});
