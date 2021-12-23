@@ -31,7 +31,7 @@ main {
 }
 
 .timer__title {
-  font-size: 5em;
+  font-size: 5.5rem;
   font-weight: 300;
   text-align: center;
   padding: 20px;
@@ -80,6 +80,12 @@ main {
 }
 
 /* Theme */
+.container--btn{
+  display: flex;
+  justify-content: space-evenly;
+  width: 20rem;
+  margin-top : 20px;
+}
 
 .btn--theme{
   padding: 10px;
@@ -119,9 +125,18 @@ main {
   .btn {
     width: 80px;
   }
+  .btn--theme{
+    width: 30px;
+    height: 30px;
+  }
+  .container--btn{
+    width: 18rem;
+  }
 
   .timer__title {
-    font-size: 4em;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -133,9 +148,13 @@ main {
   .btn {
     width: 120px;
   }
+  .btn--theme{
+    width: 40px;
+    height: 40px;
+  }
 
   .timer__title {
-    font-size: 6em;
+    font-size: 6.8rem;
   }
 }
 
@@ -150,7 +169,7 @@ main {
   }
 
   .timer__title {
-    font-size: 10em;
+    font-size: 10rem;
   }
 }
 
@@ -165,6 +184,6 @@ main {
   }
 
   .timer__title {
-    font-size: 14em;
+    font-size: 14rem;
   }
 }

@@ -1,11 +1,13 @@
 const init = document.getElementById("init");
 const parar = document.getElementById("stop");
 const pausar = document.getElementById("pause");
+const container = document.querySelector(".container");
 let hh = 0;
 let mm = 0;
 let ss = 0;
 let time;
 let tempo = document.getElementById("time");
+let gradient = 'linear-gradient(to right, #ff416c, #ff4b2b)';
 
 function start() {
   time = setInterval(() => {
@@ -50,3 +52,14 @@ pausar.addEventListener("click", () => {
 parar.addEventListener("click", () => {
   stop();
 });
+
+/* 
+container.className = '';
+container.classList.add('theme');
+container.style.background = `${gradient}`
+container.style = '';
+container.classList.add('theme2');
+container.style = '';
+container.className = '';
+container.classList.add('theme1'); 
+*/
