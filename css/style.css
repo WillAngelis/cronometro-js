@@ -91,6 +91,9 @@ main {
 .theme3{
   background : linear-gradient(to right bottom, #f498c0, #e59bd3, #cfa1e4, #b3a7ef, #93aef5);
 }
+.theme4{
+  background : linear-gradient(to right bottom, #f2ed8b, #d4f18c, #b2f395, #8af5a4, #53f5b9);
+}
 
 /* Media Query */
 
