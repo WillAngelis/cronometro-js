@@ -81,6 +81,20 @@ main {
 
 /* Theme */
 
+.btn--theme{
+  padding: 10px;
+  border: none;
+  margin: 20px 0;
+  font-size: 1em;
+  font-weight: 600;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
 .theme1 {
   background: linear-gradient(to right bottom, #08d5f2, #00bbff, #7e95ff, #cc5fce, #ea0476);
 }
