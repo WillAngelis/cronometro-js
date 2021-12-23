@@ -11,11 +11,14 @@ main {
 }
 
 .container {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.theme {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 .container__timer {
@@ -75,6 +78,21 @@ main {
 .btn:focus {
   outline: none;
 }
+
+/* Theme */
+
+.theme1 {
+  background: linear-gradient(to right bottom, #08d5f2, #00bbff, #7e95ff, #cc5fce, #ea0476);
+}
+
+.theme2 {
+  background : linear-gradient(to right bottom, #f0d833, #ffab25, #ff7b3b, #ff4758, #ea0476);
+}
+.theme3{
+  background : linear-gradient(to right bottom, #f498c0, #e59bd3, #cfa1e4, #b3a7ef, #93aef5);
+}
+
+/* Media Query */
 
 @media (min-width: 350px) {
   .buttons {
