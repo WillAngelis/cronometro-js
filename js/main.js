@@ -2,6 +2,7 @@ const init = document.getElementById("init");
 const parar = document.getElementById("stop");
 const pausar = document.getElementById("pause");
 const container = document.querySelector(".container");
+const btn = document.querySelector('.settings')
 let hh = 0;
 let mm = 0;
 let ss = 0;
@@ -52,7 +53,6 @@ pausar.addEventListener("click", () => {
 parar.addEventListener("click", () => {
   stop();
 });
-
 /* 
 container.className = '';
 container.classList.add('theme');
