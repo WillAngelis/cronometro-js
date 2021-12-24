@@ -39,10 +39,13 @@
 
 /* Theme */
 .container--btn{
-  display: flex;
   justify-content: space-evenly;
   width: 20rem;
   margin-top : 20px;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  background: linear-gradient(to right bottom, #242424, #111111);
 }
 
 .btn--theme{
