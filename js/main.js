@@ -12,40 +12,53 @@ let mm = 0;
 let ss = 0;
 let time;
 let tempo = document.getElementById("time");
-let paused = false
+let paused = false;
+let timeSaved
 
-image_input.addEventListener('change', function() {
+image_input.addEventListener("change", function () {
   let reader = new FileReader();
-  reader.addEventListener('load', () => {
+  reader.addEventListener("load", () => {
     uploaded_image = reader.result;
     container.style.backgroundImage = `url(${uploaded_image})`;
-    container.style.backgroundSize = 'contain'
-    container.style.backgroundRepeat = 'no-repeat'
-    container.style.backgroundPosition = 'center';
+    container.style.backgroundSize = "contain";
+    container.style.backgroundRepeat = "no-repeat";
+    container.style.backgroundPosition = "center";
   });
   reader.readAsDataURL(this.files[0]);
 });
 
-
-
+window.onload = function () {
+  ss = localStorage.getItem("seconds");
+  mm = localStorage.getItem("minutes");
+  hh = localStorage.getItem("hour");
+  tempo.textContent = localStorage.getItem("timeSaved");
+  paused = localStorage.getItem("pause");
+  if (paused == false) {
+    paused = true
+  } else {
+    pausar.textContent = "Despausar";
+  }
+};
 function start() {
   clearInterval(time);
   time = setInterval(() => {
     timer();
   }, 1000);
-  paused = false
-  pausar.textContent = "Pausar"
+  paused = false;
+  pausar.textContent = "Pausar";
 }
 function pause() {
   clearInterval(time);
   if (paused == false) {
-    paused = true
-    pausar.textContent = "Despausar"
-  }else{
-    start()
-    paused = false
-    pausar.textContent = "Pausar"
+    paused = true;
+    pausar.textContent = "Despausar";
+  } else {
+    start();
+    paused = false;
+    pausar.textContent = "Pausar";
+    
   }
+  localStorage.setItem("pause",`${paused}`)
 }
 function stop() {
   clearInterval(time);
@@ -53,8 +66,11 @@ function stop() {
   mm = 0;
   ss = 0;
   tempo.textContent = "00:00:00";
-  paused = false
-  pausar.textContent = "Pausar"
+  let format = tempo.textContent
+  paused = false;
+  pausar.textContent = "Pausar";
+  localStorage.setItem("pause",`${paused}`)
+  saveLocale(format)
 }
 function timer() {
   ss++;
@@ -74,6 +90,8 @@ function timer() {
     (ss < 10 ? "0" + ss : ss);
 
   tempo.textContent = format;
+  saveLocale(format)
+  
 }
 init.addEventListener("click", () => {
   start();
@@ -99,9 +117,15 @@ for (let i = 0; i < radioBtn.length; i++) {
     if (el.checked == true) {
       container.classList = "";
       document.body.classList = "";
-      container.style = ''
+      container.style = "";
       document.body.classList.add(`${el.value}`);
-      image_input.value = ''
+      image_input.value = "";
     }
   });
+}
+function saveLocale(format) {
+  localStorage.setItem("seconds", `${ss}`);
+  localStorage.setItem("minutes", `${mm}`);
+  localStorage.setItem("hour", `${hh}`);
+  localStorage.setItem("timeSaved",`${format}`)
 }
