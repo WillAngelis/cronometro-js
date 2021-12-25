@@ -1,8 +1,3 @@
-.settings__btn{
-  animation: menu 400ms;
-  position: absolute;
-  bottom: calc(0% - 5px)
-}
 .buttons {
   display: flex;
   justify-content: space-evenly;
@@ -15,7 +10,7 @@
   border-radius: 6px;
   border: none;
   box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0,
-    rgb(0 0 0 / 12%) 0 1px 18px 0;
+  rgb(0 0 0 / 12%) 0 1px 18px 0;
   color: #404040;
   cursor: pointer;
   display: inline-block;
@@ -29,6 +24,11 @@
 .themeWhite .btn, .themeWhite .settings{
   background: rgb(22, 22, 22);
   color: #d1d1d1;
+}
+.settings__btn{
+  animation: menu 300ms;
+  position: absolute;
+  bottom: calc(0% - 2px)
 }
 .settings{
   background: #fff;
@@ -44,8 +44,8 @@
   font-weight: 600;
   padding: 6px 10px;
   height: 40px;
-  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  /* transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms; */
 }
 .btn:hover, .settings:hover {
   background: #f6f9fe;
@@ -76,19 +76,19 @@
   margin-top: 20px;
   border-radius: 5px;
   padding: 10px;
-  background: linear-gradient(to right bottom, #0000, #000000f7);
-  transition: all ease-in-out 400ms;
+  background: none;
+  transition: all ease-in-out 500ms;
 ;
 }
 .btnBox{
-  bottom: -200px;
+  bottom: -200px
 }
 @keyframes menu {
   0%{
     bottom: -200px;
   }
   100%{
-    bottom: calc(0% - 20px);
+    bottom: calc(0% - 2px)
   }
 }
 
