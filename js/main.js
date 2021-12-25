@@ -28,6 +28,7 @@ image_input.addEventListener('change', function() {
 
 
 function start() {
+  clearInterval(time);
   time = setInterval(() => {
     timer();
   }, 1000);
