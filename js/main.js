@@ -2,13 +2,14 @@ const init = document.getElementById("init");
 const parar = document.getElementById("stop");
 const pausar = document.getElementById("pause");
 const container = document.querySelector(".container");
-const btn = document.querySelector('.settings')
+const btn = document.querySelector(".settings");
+const radio = document.querySelectorAll("input[type=radio]");
+
 let hh = 0;
 let mm = 0;
 let ss = 0;
 let time;
 let tempo = document.getElementById("time");
-let gradient = 'linear-gradient(to right, #ff416c, #ff4b2b)';
 
 function start() {
   time = setInterval(() => {
@@ -53,13 +54,28 @@ pausar.addEventListener("click", () => {
 parar.addEventListener("click", () => {
   stop();
 });
-/* 
-container.className = '';
-container.classList.add('theme');
-container.style.background = `${gradient}`
-container.style = '';
-container.classList.add('theme2');
-container.style = '';
-container.className = '';
-container.classList.add('theme1'); 
-*/
+btn.addEventListener("click", () => {
+  let btnContainer = document.querySelector(".container--btn");
+  btnContainer.classList.toggle("settings__btn");
+  btnContainer.classList.toggle("btnBox");
+});
+
+let radioBtn = Array.from(radio);
+
+for (let i = 0; i < radioBtn.length; i++) {
+  var botao = radioBtn[i];
+  botao.addEventListener("click", (e) => {
+    let el = e.target;
+    if (el.checked == true) {
+      container.classList = "";
+      container.classList.add(`${el.value}`);
+    }
+    if (container.classList == "themeWhite") {
+      let timer = document.querySelector(".timer__title");
+      timer.style.color = "#000";
+    } else {
+      let timer = document.querySelector(".timer__title");
+      timer.removeAttribute("style");
+    }
+  });
+}
