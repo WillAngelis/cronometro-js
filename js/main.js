@@ -85,8 +85,9 @@ for (let i = 0; i < radioBtn.length; i++) {
     let el = e.target;
     if (el.checked == true) {
       container.classList = "";
+      document.body.classList = "";
       container.style = ''
-      container.classList.add(`${el.value}`);
+      document.body.classList.add(`${el.value}`);
       image_input.value = ''
     }
   });
