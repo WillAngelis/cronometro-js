@@ -31,12 +31,12 @@
   color: #d1d1d1;
 }
 .settings{
-  background: rgb(29, 29, 29);
-  border-radius: 6px;
+  background: #fff;
+  border-radius: 5px;
   border: none;
   box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0,
     rgb(0 0 0 / 12%) 0 1px 18px 0;
-  color: #e0e0e0;
+    color: #404040;
   cursor: pointer;
   display: inline-block;
   font-family: "Google Sans", Arial, sans-serif;
