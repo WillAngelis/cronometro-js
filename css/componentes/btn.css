@@ -21,7 +21,10 @@
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
   opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
-.themeWhite .btn, .themeWhite .settings{
+.themeWhite .btn, 
+.themeWhite .settings,
+.theme5 .btn,
+.theme5 .settings{
   background: rgb(22, 22, 22);
   color: #d1d1d1;
 }
@@ -44,17 +47,18 @@
   font-weight: 600;
   padding: 6px 10px;
   height: 40px;
-  /* transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms; */
 }
+
 .btn:hover, .settings:hover {
   background: #f6f9fe;
   color: #174ea6;
 }
 .themeWhite .btn:hover, 
-.themeWhite .settings:hover{
+.themeWhite .settings:hover,
+.theme5 .btn:hover,
+.theme5 .settings:hover{
   background: #0e0e0e;
-  color: #864cf3;
+  color: #4cf38c;
 }
 
 .btn:active, .settings:active {
