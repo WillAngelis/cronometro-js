@@ -42,13 +42,31 @@
   justify-content: space-evenly;
   display: flex;
   width: 20rem;
+  position: absolute;
+  bottom: -200px;
   margin-top: 20px;
   border-radius: 25px;
   padding: 10px;
-  background: linear-gradient(to left bottom, #010101a6, #00000026);
+  background: linear-gradient(to left bottom, #0000002e, #0000001f);
+  transition: all ease-in-out 500ms;
+;
+}
+@keyframes menu {
+  0%{
+    bottom: -200px;
+  }
+  100%{
+    bottom: calc(0% - 20px);
+  }
+}
+.settings__btn{
+  animation: menu 2s;
+  position: absolute;
+  bottom: calc(0% - 20px)
 }
 
 .btn--theme {
+  appearance: none;
   padding: 10px;
   border: none;
   margin: 20px 0;
@@ -60,6 +78,9 @@
   color: white;
   cursor: pointer;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.btn--theme:active{
+  outline: 5px solid hsl(0, 0%, 12%);
 }
 
 /* Media Query */
