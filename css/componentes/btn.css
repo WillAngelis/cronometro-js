@@ -1,3 +1,8 @@
+.settings__btn{
+  animation: menu 400ms;
+  position: absolute;
+  bottom: calc(0% - 20px)
+}
 .buttons {
   display: flex;
   justify-content: space-evenly;
@@ -19,9 +24,25 @@
   font-weight: 600;
   padding: 6px 10px;
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
-
+.settings{
+  background: rgb(29, 29, 29);
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0,
+    rgb(0 0 0 / 12%) 0 1px 18px 0;
+  color: #e0e0e0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Google Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  height: 40px;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
 .btn:hover {
   background: #f6f9fe;
   color: #174ea6;
@@ -43,13 +64,15 @@
   display: flex;
   width: 20rem;
   position: absolute;
-  bottom: -200px;
   margin-top: 20px;
   border-radius: 25px;
   padding: 10px;
-  background: linear-gradient(to left bottom, #0000002e, #0000001f);
-  transition: all ease-in-out 500ms;
+  background: linear-gradient(to right bottom, #0000, #000000f7);
+  transition: all ease-in-out 400ms;
 ;
+}
+.btnBox{
+  bottom: -200px;
 }
 @keyframes menu {
   0%{
@@ -58,11 +81,6 @@
   100%{
     bottom: calc(0% - 20px);
   }
-}
-.settings__btn{
-  animation: menu 2s;
-  position: absolute;
-  bottom: calc(0% - 20px)
 }
 
 .btn--theme {
@@ -79,8 +97,9 @@
   cursor: pointer;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
 }
-.btn--theme:active{
-  outline: 5px solid hsl(0, 0%, 12%);
+.btn--theme:checked{
+  outline: 4px solid hsl(0, 0%, 12%);
+  transform: scale(1.1);
 }
 
 /* Media Query */
