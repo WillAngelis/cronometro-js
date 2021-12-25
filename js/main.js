@@ -33,6 +33,8 @@ function start() {
   time = setInterval(() => {
     timer();
   }, 1000);
+  paused = false
+  pausar.textContent = "Pausar"
 }
 function pause() {
   clearInterval(time);
@@ -51,6 +53,8 @@ function stop() {
   mm = 0;
   ss = 0;
   tempo.textContent = "00:00:00";
+  paused = false
+  pausar.textContent = "Pausar"
 }
 function timer() {
   ss++;
