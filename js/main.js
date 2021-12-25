@@ -4,12 +4,28 @@ const pausar = document.getElementById("pause");
 const container = document.querySelector(".container");
 const btn = document.querySelector(".settings");
 const radio = document.querySelectorAll("input[type=radio]");
+const image_input = document.querySelector("#img_bg");
 
+let uploaded_image;
 let hh = 0;
 let mm = 0;
 let ss = 0;
 let time;
 let tempo = document.getElementById("time");
+
+image_input.addEventListener('change', function() {
+  let reader = new FileReader();
+  reader.addEventListener('load', () => {
+    uploaded_image = reader.result;
+    container.style.backgroundImage = `url(${uploaded_image})`;
+    container.style.width = '100vw'
+    container.style.backgroundSize = 'auto'
+    container.style.backgroundPosition = 'center';
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+
 
 function start() {
   time = setInterval(() => {
@@ -68,6 +84,7 @@ for (let i = 0; i < radioBtn.length; i++) {
     let el = e.target;
     if (el.checked == true) {
       container.classList = "";
+      container.style = ''
       container.classList.add(`${el.value}`);
     }
   });
