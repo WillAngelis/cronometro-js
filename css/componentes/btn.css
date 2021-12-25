@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.btn, .btn_white {
+.btn {
   background: #fff;
   border-radius: 6px;
   border: none;
@@ -26,7 +26,7 @@
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
   opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
-.btn_white {
+.themeWhite .btn, .themeWhite .settings{
   background: rgb(22, 22, 22);
   color: #d1d1d1;
 }
@@ -47,22 +47,23 @@
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
   opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
-.btn:hover {
+.btn:hover, .settings:hover {
   background: #f6f9fe;
   color: #174ea6;
 }
-.btn_white:hover{
-  background: #404040;
-  color: #174ea6;
+.themeWhite .btn:hover, 
+.themeWhite .settings:hover{
+  background: #0e0e0e;
+  color: #864cf3;
 }
 
-.btn:active, .btn_white:active {
+.btn:active, .settings:active {
   outline: none;
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
     0 8px 12px 6px rgb(60 64 67 / 15%);
 }
 
-.btn:focus, .btn_white:hover {
+.btn:focus {
   outline: none;
 }
 
