@@ -87,6 +87,7 @@ for (let i = 0; i < radioBtn.length; i++) {
       container.classList = "";
       container.style = ''
       container.classList.add(`${el.value}`);
+      image_input.value = ''
     }
   });
 }
