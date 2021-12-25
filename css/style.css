@@ -20,11 +20,7 @@ main {
 }
 .container--flex{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-}
-.settings{
-  position: absolute;
-  bottom: 15%;
+  justify-content: space-evenly;
 }
