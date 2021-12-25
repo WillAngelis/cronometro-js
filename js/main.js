@@ -12,6 +12,7 @@ let mm = 0;
 let ss = 0;
 let time;
 let tempo = document.getElementById("time");
+let paused = false
 
 image_input.addEventListener('change', function() {
   let reader = new FileReader();
@@ -35,6 +36,14 @@ function start() {
 }
 function pause() {
   clearInterval(time);
+  if (paused == false) {
+    paused = true
+    pausar.textContent = "Despausar"
+  }else{
+    start()
+    paused = false
+    pausar.textContent = "Pausar"
+  }
 }
 function stop() {
   clearInterval(time);
