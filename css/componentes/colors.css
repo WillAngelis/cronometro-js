@@ -20,11 +20,15 @@
   background : linear-gradient(to right bottom, #242424, #111111);
 }
 
+.themeWhite .btn_input ,.theme5 .btn_input {
+  color: black;
+  border: 0.2em solid rgb(20, 20, 20);
+  /* background: #111111; */
+}
 .theme,
 .theme2,
 .theme3,
 .theme4,
-.theme5,
 .themeBlack 
 {
   color: rgb(241, 241, 241);
