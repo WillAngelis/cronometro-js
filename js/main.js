@@ -70,12 +70,5 @@ for (let i = 0; i < radioBtn.length; i++) {
       container.classList = "";
       container.classList.add(`${el.value}`);
     }
-    if (container.classList == "themeWhite") {
-      let timer = document.querySelector(".timer__title");
-      timer.style.color = "#000";
-    } else {
-      let timer = document.querySelector(".timer__title");
-      timer.removeAttribute("style");
-    }
   });
 }
