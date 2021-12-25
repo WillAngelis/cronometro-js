@@ -1,7 +1,7 @@
 .settings__btn{
   animation: menu 400ms;
   position: absolute;
-  bottom: calc(0% - 20px)
+  bottom: calc(0% - 5px)
 }
 .buttons {
   display: flex;
@@ -73,7 +73,7 @@
   width: 20rem;
   position: absolute;
   margin-top: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 10px;
   background: linear-gradient(to right bottom, #0000, #000000f7);
   transition: all ease-in-out 400ms;
@@ -93,9 +93,9 @@
 
 .btn--theme {
   appearance: none;
-  padding: 10px;
+  padding: 25px;
   border: none;
-  margin: 20px 0;
+  margin: 0;
   font-size: 1em;
   font-weight: 600;
   border-radius: 3px;
@@ -120,7 +120,8 @@
 
   .btn--theme {
     width: 40px;
-    height: 20px;
+    height: 40px;
+    padding: 0;
   }
 }
 
@@ -135,7 +136,8 @@
 
   .btn--theme {
     width: 40px;
-    height: 20px;
+    height: 40px;
+    padding: 0;
   }
 }
 
@@ -149,8 +151,12 @@
   }
 
   .btn--theme {
-    width: 40px;
-    height: 20px;
+    width: 50px;
+    height: 40px;
+    padding: 0;
+  }
+  .container--btn {
+    width: 25rem;
   }
 }
 
@@ -165,7 +171,7 @@
 
   .btn--theme {
     width: 55px;
-    height: 30px;
+    height: 45px;
   }
 
   .container--btn {
@@ -193,4 +199,9 @@
     width: 250px;
     height: 40px;
   }
+}
+@media (min-width: 1024px) {
+  .buttons {
+    width: 1024px;
+  } 
 }
