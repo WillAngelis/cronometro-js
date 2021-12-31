@@ -19,6 +19,14 @@
   "homepage": "https://github.com/WillAngelis/cronometro-js#readme",
   "devDependencies": {
     "eslint": "^8.5.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
     "install": "^0.13.0"
   }
 }
