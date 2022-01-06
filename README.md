@@ -16,6 +16,7 @@ O site está hospedado na vercel e githubpages você pode acessa-lo por este lin
 
 **Front-end:** Vanilla Javascript, Css e HTML5
 
+**Misc:** Gulp, Babel, ESlint e Conventional Commits
 ## Aprendizados
 
 - Busquei ter total atenção a tags semânticas
@@ -24,6 +25,9 @@ O site está hospedado na vercel e githubpages você pode acessa-lo por este lin
 - Componetização CSS
 - Upload de imagem
 - Setimeout para a funcionalidade do cronometro
+- Babel e Gulp para minificar, concaternar e habilitar javascript moderno em browser antigos
+- ESlint para manter um padrão de código
+- Conventional Commits para facilitar a leitura de commits
 
 ## Como usar
 
