@@ -17,6 +17,7 @@ O site está hospedado na vercel e githubpages você pode acessa-lo por este lin
 **Front-end:** Vanilla Javascript, Css e HTML5
 
 **Misc:** Gulp, Babel, ESlint e Conventional Commits
+
 ## Aprendizados
 
 - Busquei ter total atenção a tags semânticas
@@ -37,7 +38,7 @@ Para iniciar o cronometro você pode clicar no botão iniciar normalmente
 
 Ao iniciar o tempo já é registrado assim podendo atualizar a página ou muda-la e o tempo estará salvo.
 
-#gif init
+![Screenshot](./readme/img/telainicial.png)
 
 ## Pausar e Despausar
 
