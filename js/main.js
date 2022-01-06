@@ -21,7 +21,7 @@ image_input.addEventListener("change", function () {
   reader.addEventListener("load", () => {
     uploaded_image = reader.result;
     container.style.backgroundImage = `url(${uploaded_image})`;
-    container.style.backgroundSize = "contain";
+    container.style.backgroundSize = "cover";
     container.style.backgroundRepeat = "no-repeat";
     container.style.backgroundPosition = "center";
   });
