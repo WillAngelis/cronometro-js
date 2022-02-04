@@ -2,6 +2,7 @@
   font-weight: 300;
   text-align: center;
 }
+
 @media (min-width: 320px) {
   .timer__title {
     font-size: 4.5rem;
@@ -9,6 +10,7 @@
     width: 320px;
   }
 }
+
 @media (min-width: 375px) {
   .timer__title {
     font-size: 5rem;
@@ -16,6 +18,7 @@
     width: 375px;
   }
 }
+
 @media (min-width: 425px) {
   .timer__title {
     font-size: 6rem;
@@ -23,6 +26,7 @@
     width: 425px;
   }
 }
+
 @media (min-width: 580px) {
   .timer__title {
     font-size: 8rem;
@@ -30,6 +34,7 @@
     width: 580px;
   }
 }
+
 @media (min-width: 768px) {
   .timer__title {
     font-size: 10rem;
@@ -40,8 +45,8 @@
 
 @media (min-width: 980px) {
   .timer__title {
-    font-size: 14rem;
-    padding: 0;
+    font-size: 12rem;
+    padding: 18px;
     width: 980px;
   }
 }
